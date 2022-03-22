@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Matías Kochlowski</title>
+        <title>Marcos Lozada Freytes</title>
         <Favicons />
       </Head>
       <header className=''></header>
@@ -24,13 +24,13 @@ export default function Home() {
               <div className='flex items-center'>
                 <img
                   className='h-16 w-16 rounded-full mr-4 shadow-lg border border-white'
-                  src='/images/matiasKochlowski.jpg'
+                  src='/images/marcoslozada.jpg'
                   alt=''
                   width={300}
                   height={300}
                 />
                 <h3 className='text-lg leading-none font-medium text-gray-900 dark:text-white dark:text-white'>
-                  Matías Kochlowski
+                  Marcos Lozada Freytes
                 </h3>
               </div>
             </div>
@@ -41,26 +41,35 @@ export default function Home() {
                 <div className='py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
                   <dt className='text-sm font-medium text-gray-400'>E-mail</dt>
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2'>
-                    matias@kochlowski.com
+                  marcos@bircle.io | marcos.lozada@ucc.edu.ar | marcos@baas256.com | marcoslozadaf@gmail.com
                   </dd>
                 </div>
                 <div className='py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
                   <dt className='text-sm font-medium text-gray-400'>Profession</dt>
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2'>
-                    Full-Stack Web Developer: Javascript
+                  Co-Founder at Bircle | Co-Founder at Baas256 | Software Engineer and Blockchain Seminar Lecturer at Catholic University of Córdoba
                   </dd>
                 </div>
                 <div className='py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
                   <dt className='text-sm font-medium text-gray-400'>Experience</dt>
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2'>
                     <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
-                      Web Development
+                      Blockchain Development
                     </span>
                     <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
-                      Cloud Infrastructure
+                      Business Management 
                     </span>
                     <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
-                      Digital Marketing
+                      Project Management 
+                    </span>
+                    <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
+                      Data Science
+                    </span>
+                    <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
+                      Full Stack Web Development 
+                    </span>
+                    <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
+                      Test Automation 
                     </span>
                   </dd>
                 </div>
@@ -69,7 +78,7 @@ export default function Home() {
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2 grid grid-cols-4'>
                     {techStack.map((tech) => (
                       <div key={tech.name} className='flex flex-col overflow-hidden'>
-                        <div className='flex-1 py-1 mr-3'>
+                        <div className='flex-1 py-1 mr-3 justify-between'>
                           <img
                             className='h-10'
                             src={tech.logo}
@@ -152,32 +161,46 @@ const techStack = [
     width: 55,
     docs: 'https://nextjs.org/docs',
   },
+  {
+    name: 'Ethereum',
+    logo: '/images/tech-stack/ethereum.svg',
+    height: 68,
+    width: 75,
+    docs: 'https://ethereum.org/en/developers/',
+  },
+  {
+    name: 'Polygon',
+    logo: '/images/tech-stack/polygon.svg',
+    height: 68,
+    width: 75,
+    docs: 'https://docs.polygon.technology/',
+  },
 ];
 
 const social = [
   {
     name: 'GitHub',
-    href: 'https://github.com/matiaskochlowski',
+    href: 'https://github.com/marcoslozadaf',
     icon: iconGithub,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/matias-kochlowski-62034679',
+    href: 'https://www.linkedin.com/in/marcoslozadafreytes/',
     icon: iconLinkedIn,
   },
   {
     name: 'Instagram',
-    href: 'https://instagram.com/matiaskochlowski',
+    href: 'https://instagram.com/marcoslozada',
     icon: iconInstagram,
   },
   {
     name: 'Twitter',
-    href: 'https://twitter.com/matikochlowski',
+    href: 'https://twitter.com/marcoslozadaf',
     icon: iconTwitter,
   },
   {
     name: 'Facebook',
-    href: 'https://facebook.com/matiaskochlowski',
+    href: 'https://www.facebook.com/marcoslozadaf',
     icon: iconFacebook,
   },
 ];
