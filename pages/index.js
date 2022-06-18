@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import {
   iconGithub,
   iconLinkedIn,
@@ -45,13 +46,17 @@ export default function Home() {
                   </dd>
                 </div>
                 <div className='py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-                  <dt className='text-sm font-medium text-gray-400'>Profession</dt>
+                  <dt className='text-sm font-medium text-gray-400'>
+                    Profession
+                  </dt>
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2'>
                     Full-Stack Web Developer: Javascript
                   </dd>
                 </div>
                 <div className='py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-                  <dt className='text-sm font-medium text-gray-400'>Experience</dt>
+                  <dt className='text-sm font-medium text-gray-400'>
+                    Experience
+                  </dt>
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2'>
                     <span className='inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 dark:bg-black text-gray-800 mr-3 dark:text-white mb-1'>
                       Web Development
@@ -65,10 +70,15 @@ export default function Home() {
                   </dd>
                 </div>
                 <div className='py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-                  <dt className='text-sm font-medium text-gray-400'>Preferred Stack</dt>
+                  <dt className='text-sm font-medium text-gray-400'>
+                    Preferred Stack
+                  </dt>
                   <dd className='mt-1 text-sm text-gray-900 dark:text-white sm:mt-0 sm:col-span-2 grid grid-cols-4'>
                     {techStack.map((tech) => (
-                      <div key={tech.name} className='flex flex-col overflow-hidden'>
+                      <div
+                        key={tech.name}
+                        className='flex flex-col overflow-hidden'
+                      >
                         <div className='flex-1 py-1 mr-3'>
                           <img
                             className='h-10'
