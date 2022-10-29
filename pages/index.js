@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-import Favicons from '../components/Favicons';
 import SocialMediaIcons from '../components/home/SocialMediaIcons';
 import TechStack from '../components/home/TechStack';
 
@@ -9,7 +8,6 @@ export default function Home() {
     <>
       <Head>
         <title>Matías Kochlowski</title>
-        <Favicons />
       </Head>
       <header className=''></header>
       <main className=''>
