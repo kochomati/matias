@@ -4,7 +4,7 @@ export default function Custom500() {
   return (
     <div>
       <Head>
-        <title>500 - Kochlowski</title>
+        <title>500 - Matías Kochlowski</title>
       </Head>
       <header className='bg-white'></header>
       <main className='bg-white overflow-hidden'>
